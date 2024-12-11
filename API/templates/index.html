@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Recognition</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form id="uploadForm">
+        <input type="file" id="imageInput" name="image" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+    <h2>Result:</h2>
+    <p id="result">No result yet</p>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const formData = new FormData();
+            const imageInput = document.getElementById('imageInput').files[0];
+            formData.append('image', imageInput);
+
+            const response = await fetch('/process', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const result = await response.json();
+            document.getElementById('result').innerText = result.plate_number || 'Error processing image';
+        });
+    </script>
+</body>
+</html>
