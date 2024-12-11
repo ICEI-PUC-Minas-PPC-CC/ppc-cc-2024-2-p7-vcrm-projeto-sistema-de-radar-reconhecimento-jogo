@@ -1,42 +1,27 @@
-# TÍTULO DO PROJETO
+# Sistema de Radar e Reconhecimento de placas do Jogo
 
 `PPC-CC: PUC Poços de Caldas - Ciência da Computação`
-`Disciplina: NOME DA DISCIPLINA`
-`2021 - Semestre 1`
+`Disciplina: Visão Computacional e Realidade Misturada`
+`Semestre: 2024 - 2º semestre`
+
+## Video de Apresentação
+
+- https://youtu.be/9pxJW8iaIIE
 
 ## Integrantes
 
-- Jeff Bezos
-- Bill Gates
-- Larry Ellison
-- Mark Zuckerberg
+- Aluno João Victor Zanolli Crespo
+- Professor Will Ricardo dos Santos Machado
 
-## Professor
+# Descrição do Projeto
 
-- Mestre Yoda
+Este projeto consiste no desenvolvimento de um sistema de radar com capacidade de reconhecimento de objetos em um ambiente de jogo. 
+O objetivo é aplicar técnicas de visão computacional para identificar e rastrear veículos que excedem limites de velocidade,
+capturando prints desses veículos e enviando-os automaticamente para um canal no Discord. 
+Além disso, o sistema faz o reconhecimento das placas desses veículos por meio de algoritmos externos de visão computacional.
 
-# Documentação
+# Estrutura do Repositório
 
-<ol>
-<li><a href="docs/1-Documentação de Contexto.md"> Documentação de Contexto</a></li>
-<li><a href="docs/2-Especificação do Projeto.md"> Especificação do Projeto</a></li>
-<li><a href="docs/3-Projeto de Interface.md"> Projeto de Interface</a></li>
-<li><a href="docs/4-Metodologia.md"> Metodologia</a></li>
-<li><a href="docs/5-Arquitetura da Solução.md"> Arquitetura da Solução</a></li>
-<li><a href="docs/6-Template padrão do Site.md"> Template padrão do Site</a></li>
-<li><a href="docs/7-Programação de Funcionalidades.md"> Programação de Funcionalidades</a></li>
-<li><a href="docs/8-Plano de Testes de Software.md"> Plano de Testes de Software</a></li>
-<li><a href="docs/9-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
-<li><a href="docs/10-Plano de Testes de Usabilidade.md"> Plano de Testes de Usabilidade</a></li>
-<li><a href="docs/11-Registro de Testes de Usabilidade.md"> Registro de Testes de Usabilidade</a></li>
-<li><a href="docs/12-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
-<li><a href="docs/13-Referências.md"> Referências</a></li>
-</ol>
-
-# Código
-
-<li><a href="src/README.md"> Código Fonte</a></li>
-
-# Apresentação
-
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+- API/: Contém os serviços e endpoints utilizados pelo sistema em caso de usar a API.
+- Jogo/: Inclui os recursos e scripts relacionados ao ambiente do jogo.
+- Reconhecimento/: Abriga os modelos e algoritmos de reconhecimento de objetos e placas.
